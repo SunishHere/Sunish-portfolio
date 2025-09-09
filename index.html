@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunish - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            /* A light gray background */
+        }
+
+        /* Style for active nav link */
+        .nav-link-active {
+            color: #3b82f6;
+            /* A nice blue color for active link */
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header & Navigation Bar -->
+    <header id="header" class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#"
+                class="text-2xl font-bold text-gray-800 lg:text-3xl hover:text-blue-500 transition-colors duration-300">Sunish Pal</a>
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex lg:items-center space-x-6">
+                <a href="#home"
+                    class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-300">Home</a>
+                <a href="#about"
+                    class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-300">About</a>
+                <a href="#projects"
+                    class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-300">Projects</a>
+                <a href="#reviews"
+                    class="nav-link text-gray-600 hover:text-blue-500 transition-colors duration-300">Certifications</a>
+                <a href="#contact"
+                    class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
+            <a href="#home" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#projects" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">Projects</a>
+            <a href="#reviews" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">Certifications</a>
+            <a href="#contact" class="block nav-link text-center py-2 text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="pt-24 lg:pt-32 bg-white pb-20">
+            <div
+                class="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-center lg:justify-between">
+                <!-- Left Column (Text) -->
+                <div class="text-center lg:text-left lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">Creative Web Developer
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">I design and build beautiful, responsive, and user-friendly
+                        websites, applications & real-time upadte dashboard.</p>
+                    <div class="flex justify-center lg:justify-start space-x-4">
+                        <a href="#projects"
+                            class="bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105">View
+                            My Projects</a>
+                        <a href="#contact"
+                            class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105">Get
+                            In Touch</a>
+                            <a href="https://drive.google.com/file/d/1t5TCAWcz2SZHn6TArOjzAjXlWhDNR88R/view?usp=sharing"
+                            class="bg-gray-200 text-gray-800 px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition-transform duration-300 transform hover:scale-105">
+                            Download Resume</a>
+                    </div>
+                </div>
+                <!-- Right Column (Image) -->
+                <div class="lg:w-1/2 flex justify-center">
+                    <img src="main profile.jpg" alt="Sunish"
+                        class="rounded-full w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+                <div class="flex flex-col lg:flex-row items-center bg-white p-8 rounded-lg shadow-lg">
+                    <div class="lg:w-1/3 mb-8 lg:mb-0">
+                        <img src="IMG_20250716_174839.jpg" alt="About Sunish"
+                            class="rounded-lg shadow-md w-full">
+                    </div>
+                    <div class="lg:w-2/3 lg:pl-12 text-center lg:text-left">
+                        <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Hello! I'm Sunish, a passionate web developer with over 1 years of experience in
+                            creating
+                            dynamic and engaging web experiences. My journey in web development started with a simple
+                            "Hello World" and has since grown into a full-fledged passion for crafting elegant solutions
+                            to complex problems.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            I specialize in front-end technologies like React and JavaScript, but I'm also proficient with
+                            back-end development using Node.js. and i am also working in data analytics. I believe in clean code, great user experiences, and
+                            continuous learning.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div
+                        class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="Screenshot 2025-09-03 230052.png" alt="Project 1"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">clothing-store-frontend</h3>
+                            <p class="text-gray-600 mb-4">A fully-featured e-commerce website built with HTML, CSS & JS
+                                and Stripe for payments.</p>
+                            <a href="https://github.com/SunishHere/clothing-store-frontend0" class="text-blue-500 font-semibold hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div
+                        class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="Screenshot 2024-11-18 232440.png" alt="Project 2"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Dashboard-using-powerBI</h3>
+                            <p class="text-gray-600 mb-4">A collaborative Dashboard-using-powerBI with real-time updates</p>
+                            <a href="https://github.com/SunishHere/Dashboard-using-powerBI" class="text-blue-500 font-semibold hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div
+                        class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="Screenshot 2025-09-03 230220.png" alt="Project 3"
+                            class="w-full h-56 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Portfolio Website Template</h3>
+                            <p class="text-gray-600 mb-4">A sleek and modern portfolio template designed with Tailwind
+                                CSS for easy customization.</p>
+                            <a href="https://github.com/SunishHere/portfolio2.0" class="text-blue-500 font-semibold hover:underline">View Project &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">My Certifications</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Review 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"Certified in EXIN BCS Artificial Intelligence Essentials with 75% score, showcasing strong AI fundamentals and skills"</p>
+                        <div class="flex items-center">
+                            <img src="data:image/png;base64,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" alt="Client 1"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold">EXIN AI Certificate</p>
+                                <p class="text-sm text-gray-500">EXIN EXAMINATIONS</p>
+                                    <a href="https://drive.google.com/file/d/15Il2TP0mYy1jEEvcgoHdUeqPiXKOxyNl/view?usp=sharing" class="text-blue-500 font-semibold hover:underline">View certification &rarr;</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 italic mb-4">Successfully participated in Goa Government’s Cyber Security Quiz 2024, demonstrating awareness of cybersecurity principles and practices"</p>
+                        <div class="flex items-center">
+                            <img src="data:image/jpeg;base64,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" alt="Client 2"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold">Cyber Security Quiz Certificate</p>
+                                <p class="text-sm text-gray-500">Goa Government</p>
+                                <a href="https://drive.google.com/file/d/1piZ4E2ghacuSoO9CJR5AzX84A2iohMz1/view?usp=sharing" class="text-blue-500 font-semibold hover:underline">View certification &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Review 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <p class="text-gray-600 italic mb-4">"Achieved Microsoft Copilot certification, validating proficiency in leveraging AI-powered Copilot tools for productivity and innovation"</p>
+                        <div class="flex items-center">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAkFBMVEX///+BvAYFpvD/ugjzUyUAo/D/twC92pR6uQD7z8bzThnyOADI4KiSxTv1eV2byVJSuPP/x1PB5PoAne//36j/wzuUz/f/2pT4qJjzSAv95N/4oI7i7s+62Y/H4KLyQwDyKACOwy/82ND0a0vT5riXx0iq0WrM6fs/s/L/5bf/xUf/0Gr/wTDb7/z+7s//36L62YWvAAAA5UlEQVR4nO3aV05CYQCE0WsFUaSJBRFQig1l/7vz4Y8ml9chQZLzLWByFjBVJWmvje6zHsvM+KkRNamhLqYPUbMyM2lmPddRrdOoyzJz1TyKakNBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUEdJmraipr9onb5Cnq5zpqXmcWyE7WqJP2HXrtZb2Xm/aMX9VlD9c+yBmXm5jxruIU6jvpDnURBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBHShqsJNX0CZ8Ba1rqK/bsDLzfZe1qSTttR9VofAdHuhbPwAAAABJRU5ErkJggg==" alt="Client 3"
+                                class="w-12 h-12 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold">Microsoft Copilot Certificate</p>
+                                <p class="text-sm text-gray-500">Skill Nation</p>
+                                <a href="https://drive.google.com/file/d/115oMFHJgESeNm6PqtfdgnLQub9ISg4sS/view?usp=sharing" class="text-blue-500 font-semibold hover:underline">View certification &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Contact Me</h2>
+                  <form action="https://formspree.io/f/mdkdbqyb" method="POST">
+                <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition-transform duration-300 transform hover:scale-105">Send
+                                Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <!-- Social Media Icons -->
+                <a href="https://www.facebook.com/share/15wVagbv84/" class="hover:text-blue-400 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2.03998C6.48 2.03998 2 6.51998 2 12.04C2 16.98 5.24 21.11 9.75 22V14.25H6.88V12.04H9.75V9.75C9.75 6.9 11.56 5.25 14.01 5.25C15.19 5.25 16.25 5.44 16.25 5.44V7.5H15.01C13.62 7.5 13.33 8.28 13.33 9.31V12.04H16.13L15.69 14.25H13.33V22C17.76 21.11 21 16.98 21 12.04C21 6.51998 16.52 2.03998 12 2.03998Z" />
+                    </svg>
+                </a>
+                <a href="https://x.com/sunish_pal" class="hover:text-blue-400 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M22.46,6C21.78,6.34 21.06,6.58 20.3,6.68C21.08,6.22 21.66,5.46 21.94,4.58C21.22,5 20.44,5.32 19.62,5.5C18.94,4.76 17.98,4.28 16.92,4.28C14.9,4.28 13.26,5.92 13.26,7.94C13.26,8.22 13.28,8.5 13.34,8.76C10.28,8.6 7.58,7.12 5.68,4.8C5.36,5.34 5.18,5.96 5.18,6.62C5.18,7.94 5.86,9.12 6.88,9.8C6.26,9.78 5.68,9.6 5.18,9.32V9.36C5.18,11.28 6.58,12.88 8.48,13.24C8.18,13.32 7.86,13.36 7.54,13.36C7.28,13.36 7.04,13.34 6.8,13.28C7.34,14.84 8.82,16 10.56,16.04C9.18,17.16 7.44,17.82 5.54,17.82C5.24,17.82 4.94,17.8 4.66,17.76C6.44,18.9 8.56,19.58 10.82,19.58C16.9,19.58 20.38,14.5 20.38,10.06C20.38,9.88 20.38,9.7 20.36,9.52C21,9.02 21.8,8.28 22.46,7.42V6Z" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/sunish-pal-863405278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-blue-400 transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19,3H5C3.89,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.9 20.1,3 19,3M8.5,18H6.5V10.5H8.5V18M7.5,9.5C6.67,9.5 6,8.83 6,8C6,7.17 6.67,6.5 7.5,6.5C8.33,6.5 9,7.17 9,8C9,8.83 8.33,9.5 7.5,9.5M18,18H16V13.4C16,12.33 15.67,11.83 15,11.83C14.33,11.83 14,12.33 14,13.1V18H12V10.5H14V11.5C14.33,10.83 15,10.5 15.83,10.5C17.25,10.5 18,11.5 18,13.1V18Z" />
+                            
+                    </svg>
+                </a>
+                <a href="https://github.com/SunishHere" target="_blank" 
+   class="hover:text-blue-400 transition-colors duration-300">
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" 
+       xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.6-1.5-1.4-1.9-1.4-1.9-1.1-.7.1-.7.1-.7 
+         1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 
+         .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.9 
+         0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 
+         0 0 1-.3 3.4 1.2a11.6 11.6 0 0 1 6.2 0 
+         c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.2 2.8.1 3.1 
+         .8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.6-5.3 5.9 
+         .4.3.8 1 .8 2v3c0 .3.2.7.8.6A10.9 10.9 0 0 0 23.5 12 
+         C23.5 5.65 18.35.5 12 .5Z"/>
+  </svg>
+</a>
+<a href="https://www.instagram.com/palsuneesh" target="_blank"
+   class="hover:text-pink-500 transition-colors duration-300">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+         xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5A4.25 4.25 0 0 0 20.5 16.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10a5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7Zm5.25-.88a.88.88 0 1 1 0 1.75a.88.88 0 0 1 0-1.75Z"/>
+    </svg>
+</a>
+            </div>
+            <p class="text-gray-400">&copy; 2025 Sunish. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for Smooth Scrolling and Active Nav Link Highlighting
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+            const header = document.getElementById('header');
+            const headerHeight = header.offsetHeight;
+
+            // Function to handle smooth scroll
+            const smoothScroll = (e) => {
+                e.preventDefault();
+                const targetId = e.currentTarget.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+                // Close mobile menu on link click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            };
+
+            // Function to update active nav link
+            const updateActiveLink = () => {
+                let currentSection = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - headerHeight - 50; // Add a small offset
+                    if (window.pageYOffset >= sectionTop) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('nav-link-active', 'font-bold');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('nav-link-active', 'font-bold');
+                    }
+                });
+            };
+
+            // Attach event listeners
+            navLinks.forEach(link => {
+                link.addEventListener('click', smoothScroll);
+            });
+
+            window.addEventListener('scroll', updateActiveLink);
+            // Initial call to set active link on page load
+            updateActiveLink();
+        });
+    </script>
+
+</body>
+
+</html>
